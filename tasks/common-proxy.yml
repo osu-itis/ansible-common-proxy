@@ -1,0 +1,21 @@
+---
+- name: set HTTPS_PROXY
+  lineinfile: dest=/etc/environment line="HTTPS_PROXY=https://proxy.oregonstate.edu:3128"
+
+- name: set HTTP_PROXY
+  lineinfile: dest=/etc/environment line="HTTP_PROXY=http://proxy.oregonstate.edu:3128"
+
+- name: set FTP_PROXY
+  lineinfile: dest=/etc/environment line="FTP_PROXY=http://proxy.oregonstate.edu:3128"
+
+- name: set https_proxy
+  lineinfile: dest=/etc/environment line="https_proxy=https://proxy.oregonstate.edu:3128"
+
+- name: set http_proxy
+  lineinfile: dest=/etc/environment line="http_proxy=http://proxy.oregonstate.edu:3128"
+
+- name: set ftp_proxy
+  lineinfile: dest=/etc/environment line="ftp_proxy=http://proxy.oregonstate.edu:3128"
+
+- name: set proxy in yum
+  lineinfile: dest=/etc/yum.conf line="proxy=https://proxy.oregonstate.edu:3128"
