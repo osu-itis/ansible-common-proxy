@@ -1,5 +1,3 @@
 # ansible-common-proxy
 
-Configures proxy on CentOS machines
-
-TODO: add support for Ubuntu
+Configures proxy system-wide on CentOS and Debian machines, and adds proxy configuration to yum and apt when appropriate.
