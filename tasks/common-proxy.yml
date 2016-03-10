@@ -23,4 +23,5 @@
 
 - name: set proxy in apt
   lineinfile: dest=/etc/apt/apt.conf line="Acquire::http::Proxy \"http://proxy.oregonstate.edu:3128\";"
+  create: yes
   when: ansible_os_family == 'Debian'
